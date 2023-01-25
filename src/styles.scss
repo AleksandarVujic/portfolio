@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    // color: #333;
+    font-size: 1em;
+    // background-color: #1e1e1e;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.5s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+// not showing scrollbar but can scroll
+body::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+}
+
+section::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+// Style for scrollbar
+// body::-webkit-scrollbar {
+//     width: 7px;
+// }
+
+// body::-webkit-scrollbar-track {
+//     background: orange;
+// }
+
+// body::-webkit-scrollbar-thumb {
+//     background-color: blue;
+//     border-radius: 0px;
+// }
