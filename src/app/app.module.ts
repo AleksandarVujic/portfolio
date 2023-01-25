@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { PagesModule } from './pages/pages.module';
 import { OverlayComponent } from './components/overlay/overlay.component';
 import { NavigationComponent } from './layouts/navigation/navigation.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { NavigationComponent } from './layouts/navigation/navigation.component';
     HomeComponent,
     OverlayComponent,
     NavigationComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,

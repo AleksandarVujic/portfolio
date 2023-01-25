@@ -54,6 +54,12 @@ $progress-duration: 3.5s;
     transform: translate3d(-50%, -50%, 0);
 }
 
+.sub-wrapper img {
+    height: 100px;
+    width: 100px;
+    animation: fadeInTop 1.5s ease-in;
+}
+
 @keyframes loader {
     0% {
         width: 0;
@@ -84,5 +90,17 @@ $progress-duration: 3.5s;
     }
     100% {
         width: 100%;
+    }
+}
+
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        top: 45%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 50%;
     }
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { DialogService } from '../services/dialog-service/dialog-service.service';
+import { NavigationService } from '../services/navigation-service/navigation.service';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,14 @@ import { DialogService } from '../services/dialog-service/dialog-service.service
 })
 export class HomeComponent {
 
-  constructor(public dialogService: DialogService) { }
+  constructor(public dialogService: DialogService, public navigationService: NavigationService,) { }
 
   openOvarlayNS() {
     this.dialogService.showDialog = true;
   }
 
-  toggleMenu() { }
+  openMenu() {
+    this.navigationService.showNavigation = true;
+  }
 
 }

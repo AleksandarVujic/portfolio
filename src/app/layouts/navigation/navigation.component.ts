@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavigationService } from 'src/app/services/navigation-service/navigation.service';
 
 @Component({
   selector: 'app-navigation',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class NavigationComponent {
 
+  constructor(private navigationService: NavigationService) { }
+
+  onToggleNavigation() {
+    this.navigationService.showNavigation = false;
+  }
 }
