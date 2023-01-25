@@ -3,13 +3,26 @@
 
 
     <div class="overlay-content">
-
         <div class="city-info">
             <div class="images-slider">
-                <carousel style="object-fit: fill;" [images]="images"></carousel>
+                <carousel [images]="images"></carousel>
             </div>
-            <div class="about-ns"></div>
-
+            <div class="about-ns">
+                <h2 class="according-title">Novi Sad according to...</h2>
+                <span class="according-to">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                    <a href="https://en.wikipedia.org/wiki/Novi_Sad">Wikipedia</a>
+                </span>
+                <span class="according-to">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                    <a href="https://novisad.travel/en/">TONS</a>
+                </span>
+                <span class="according-to">
+                    <i class="fa fa-link" aria-hidden="true"></i>
+                    <a
+                        href="https://www.tripadvisor.com/Attractions-g295380-Activities-Novi_Sad_Vojvodina.html">Tripadvisor</a>
+                </span>
+            </div>
         </div>
 
         <div class="mapouter">

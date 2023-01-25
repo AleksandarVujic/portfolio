@@ -32,8 +32,8 @@
 .overlay-content .about-ns {
     width: 290px;
     height: 190px;
-    background: #f1f1f1;
     margin: 10px;
+    color: #fff;
 }
 
 .overlay div {
@@ -65,4 +65,44 @@
         top: 15px;
         right: 35px;
     }
+}
+
+.about-ns .according-title {
+    font-family: "Roboto", Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    display: block;
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.about-ns .according-title,
+.according-to {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.according-to {
+    margin-top: 20px;
+}
+
+.according-to a {
+    margin-left: 30px;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 16;
+    letter-spacing: 2px;
+}
+
+.according-to a:hover {
+    color: #fc0;
+    opacity: 1;
 }

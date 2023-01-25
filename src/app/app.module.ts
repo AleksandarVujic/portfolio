@@ -9,6 +9,7 @@ import { PagesModule } from './pages/pages.module';
 import { OverlayComponent } from './components/overlay/overlay.component';
 import { NavigationComponent } from './layouts/navigation/navigation.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { MouseScrollMeComponent } from './components/mouse-scroll-me/mouse-scroll-me.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     OverlayComponent,
     NavigationComponent,
     CarouselComponent,
+    MouseScrollMeComponent,
   ],
   imports: [
     BrowserModule,
