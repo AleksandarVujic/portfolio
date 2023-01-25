@@ -6,8 +6,6 @@
 
 .carousel-container img {
     display: none;
-    // width: 280px;
-    // height: 200px;
 }
 
 .carousel-container img.image-active {
@@ -44,7 +42,6 @@
 }
 
 .fade {
-    // animation: name duration timing-function delay iteration-count direction fill-mode;
     animation-name: fade;
     animation-duration: 1.5s;
 }
