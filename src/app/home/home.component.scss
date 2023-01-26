@@ -91,7 +91,7 @@
                 opacity: 0;
                 font-weight: 400;
                 font-family: "Lato";
-                color: #ffffff;
+                color: #fff;
                 font-size: 16px;
                 text-transform: uppercase;
                 letter-spacing: 5px;
@@ -102,7 +102,7 @@
                 text-decoration-style: dashed;
                 cursor: pointer;
                 &:hover {
-                    color: white;
+                    color: #fff;
                 }
             }
         }
@@ -255,6 +255,9 @@ footer {
     left: 45px;
     font-size: 60px;
     cursor: pointer;
-    color: #fff;
+    color: #ddd;
     font-size: 24px;
+    &:hover {
+        color: #fff;
+    }
 }

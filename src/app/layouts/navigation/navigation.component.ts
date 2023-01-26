@@ -10,7 +10,7 @@ export class NavigationComponent {
 
   constructor(private navigationService: NavigationService) { }
 
-  onToggleNavigation() {
+  onCloseNavigation() {
     this.navigationService.showNavigation = false;
   }
 }

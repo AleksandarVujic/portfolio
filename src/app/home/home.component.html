@@ -1,4 +1,4 @@
-<section>
+<section id="home">
     <div class="container">
         <a class="menu-btn" (click)="openMenu()" *ngIf="!navigationService.showNavigation">
             <span>menu</span>
@@ -17,9 +17,25 @@
         </div>
     </div>
 
-
     <overlay *ngIf="dialogService.showDialog"></overlay>
 
+    <mouse-scroll-me></mouse-scroll-me>
 </section>
-<mouse-scroll-me></mouse-scroll-me>
-<about></about>
+
+
+<section id="aboutId" class="about" name="about">
+    <about></about>
+</section>
+
+<section id="projectsId" class="projects" name="projects">
+    <projects></projects>
+</section>
+
+<section id="contactId" class="contact" name="contact">
+    <contact></contact>
+</section>
+
+
+<section id="footer-barId" class="footer-bar">
+    <footer-bar></footer-bar>
+</section>

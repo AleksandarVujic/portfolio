@@ -1,10 +1,10 @@
 <div class="overlay">
-    <a class="closebtn" (click)="onToggleNavigation()"><span>&times;</span></a>
+    <a class="closebtn" (click)="onCloseNavigation()"><span>&times;</span></a>
 
     <div class="overlay-content">
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#aboutId" fragment="about" (click)="onCloseNavigation()">About</a>
+        <a href="#projectsId" fragment="projects" (click)="onCloseNavigation()">Projects</a>
+        <a href="#contactId" fragment="contact" (click)="onCloseNavigation()">Contact</a>
     </div>
 
 </div>

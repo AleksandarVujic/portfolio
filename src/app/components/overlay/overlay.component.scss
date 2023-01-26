@@ -66,6 +66,9 @@
         right: 35px;
     }
 }
+.according-title {
+    margin: 0;
+}
 
 .about-ns .according-title {
     font-family: "Roboto", Arial, sans-serif;
@@ -73,11 +76,9 @@
     font-style: italic;
     display: block;
     text-align: left;
-    height: 30px;
     line-height: 30px;
     letter-spacing: 0.02em;
     margin-bottom: 10px;
-    padding-left: 20px;
 }
 
 .about-ns .according-title,
@@ -105,4 +106,18 @@
 .according-to a:hover {
     color: #fc0;
     opacity: 1;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 400px;
+    width: 500px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 400px;
+    width: 500px;
 }
