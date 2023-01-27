@@ -41,3 +41,42 @@ section::-webkit-scrollbar {
 //     background-color: blue;
 //     border-radius: 0px;
 // }
+
+.segment-container {
+    margin: auto;
+    padding: 6rem 0;
+}
+
+.segment-heading_main {
+    display: block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    color: #111;
+}
+.segment-heading_main::after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 3rem;
+    background: #facf0f;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.segment-heading_subtext {
+    display: block;
+    text-align: center;
+    color: #555;
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 70rem;
+    margin: auto;
+    line-height: 1.6;
+}
