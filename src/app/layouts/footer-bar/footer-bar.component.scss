@@ -1,9 +1,37 @@
+.top-line {
+    height: 3px;
+    background: #fc0;
+    box-shadow: 0 0 35px 15px #fc0, 0 0 50px 25px #fff;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    height: 250px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(../../../assets/images/home_bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .scroll-to-top {
-    padding: 0.5rem 1rem;
-    margin: 0 auto;
-    padding: 10px 10px;
+    padding: 10px 15px;
     color: #fff;
     background: rgb(180, 180, 2);
     border-radius: 50%;
     cursor: pointer;
+}
+
+.social-links {
+    font-size: 48px;
+    a {
+        margin: 20px;
+        color: #fff;
+    }
+}
+
+.copyrights {
+    color: #fff;
 }
