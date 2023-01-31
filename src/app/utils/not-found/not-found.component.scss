@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Mono:400");
-
-body {
+.not-found {
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -16,6 +15,9 @@ body {
 
 div {
     animation: glitch 1s linear infinite;
+    -webkit-animation: glitch 1s linear infinite;
+    -moz-animation: glitch 1s linear infinite;
+    -o-animation: glitch 1s linear infinite;
 }
 
 @keyframes glitch {
@@ -38,11 +40,15 @@ div:before,
 div:after {
     content: attr(title);
     position: absolute;
-    left: 0;
+    left: 50%;
+    margin-left: -78px;
 }
 
 div:before {
     animation: glitchTop 1s linear infinite;
+    -webkit-animation: glitchTop 1s linear infinite;
+    -moz-animation: glitchTop 1s linear infinite;
+    -o-animation: glitchTop 1s linear infinite;
     clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }

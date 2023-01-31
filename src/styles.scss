@@ -80,3 +80,30 @@ section::-webkit-scrollbar {
     margin: auto;
     line-height: 1.6;
 }
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+.close-btn {
+    position: absolute;
+    top: 25px;
+    left: 45px;
+    font-size: 60px;
+    cursor: pointer;
+    color: #ddd;
+    &:hover {
+        color: #fff;
+    }
+}
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+    .overlay .close-btn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

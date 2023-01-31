@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 
+$main_bloc_color: #ffb510;
+$secondary_bloc_color: #e91e63;
+
 .container {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(../../assets/images/home_bg.jpg);
@@ -29,9 +32,12 @@
             .block {
                 width: 0%;
                 height: inherit;
-                background: #ffb510;
+                background: $main_bloc_color;
                 position: absolute;
-                animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                animation: mainBlock 1.5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                -webkit-animation: mainBlock 1.5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                -moz-animation: mainBlock 1.5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                -o-animation: mainBlock 1.5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
                 animation-delay: 3.5s;
                 display: flex;
             }
@@ -41,6 +47,7 @@
                 color: #fff;
                 font-size: 32px;
                 -webkit-animation: mainFadeIn 2s forwards;
+                -moz-animation: mainFadeIn 2s forwards;
                 -o-animation: mainFadeIn 2s forwards;
                 animation: mainFadeIn 2s forwards;
                 animation-delay: 4.8s;
@@ -56,7 +63,6 @@
                     -moz-border-radius: 50%;
                     border-radius: 50%;
                     background: #ffb510;
-                    -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
                     animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
                     animation-delay: 5.5s;
                     margin-left: 5px;
@@ -79,15 +85,21 @@
             .block {
                 width: 0%;
                 height: inherit;
-                background: #e91e63;
+                background: $secondary_bloc_color;
                 position: absolute;
-                animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                animation: secondaryBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                -webkit-animation: secondaryBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                -moz-animation: secondaryBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                -o-animation: secondaryBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
                 animation-delay: 5.5s;
                 display: flex;
             }
 
             p {
                 animation: secFadeIn 2s forwards;
+                -webkit-animation: secFadeIn 2s forwards;
+                -moz-animation: secFadeIn 2s forwards;
+                -o-animation: secFadeIn 2s forwards;
                 animation-delay: 6.7s;
                 opacity: 0;
                 font-weight: 400;
@@ -125,7 +137,7 @@
     }
 }
 
-@keyframes secBlock {
+@keyframes secondaryBlock {
     0% {
         width: 0%;
         left: 0;
@@ -261,4 +273,35 @@ footer {
     &:hover {
         color: #fff;
     }
+}
+
+a {
+    background-image: linear-gradient(to right, #51d1ff, #9fe5ff 50%, #fc0 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+a:before {
+    content: "";
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+a:hover {
+    background-position: 0;
+    font-weight: bold;
+}
+a:hover::before {
+    width: 100%;
 }

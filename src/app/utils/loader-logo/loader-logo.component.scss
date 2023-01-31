@@ -33,6 +33,9 @@ $progress-duration: 3.5s;
 
 .progress-value {
     animation: loader $progress-duration cubic-bezier(1, 0, 0, 1) forwards;
+    -webkit-animation: loader $progress-duration cubic-bezier(1, 0, 0, 1) forwards;
+    -moz-animation: loader $progress-duration cubic-bezier(1, 0, 0, 1) forwards;
+    -o-animation: loader $progress-duration cubic-bezier(1, 0, 0, 1) forwards;
     background: $green;
     color: #fff;
     padding: $bar-size;

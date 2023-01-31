@@ -1,3 +1,6 @@
+$redColor: rgba(244, 67, 54, 1);
+$blueColor: rgba(33, 150, 243, 1);
+
 .top-line {
     height: 3px;
     background: #fc0;
@@ -29,6 +32,39 @@
     a {
         margin: 20px;
         color: #fff;
+    }
+}
+
+.social-icon {
+    padding: 10px;
+    animation: socialIconGlitch 200ms 10;
+    -webkit-animation: socialIconGlitch 200ms 10;
+    -moz-animation: socialIconGlitch 200ms 10;
+    -o-animation: socialIconGlitch 200ms 10;
+    color: #fff;
+    &:hover {
+        animation: socialIconGlitch 200ms infinite;
+        -webkit-animation: socialIconGlitch 200ms infinite;
+        -moz-animation: socialIconGlitch 200ms infinite;
+        -o-animation: socialIconGlitch 200ms infinite;
+    }
+}
+
+@keyframes socialIconGlitch {
+    0% {
+        text-shadow: 5px 4px $redColor, -5px -6px $blueColor;
+    }
+    25% {
+        text-shadow: -5px -6px $redColor, 5px 4px $blueColor;
+    }
+    50% {
+        text-shadow: 5px -4px $redColor, -8px 4px $blueColor;
+    }
+    75% {
+        text-shadow: -8px -4px $redColor, -5px -4px $blueColor;
+    }
+    100% {
+        text-shadow: -5px 0 $redColor, 5px -4px $blueColor;
     }
 }
 

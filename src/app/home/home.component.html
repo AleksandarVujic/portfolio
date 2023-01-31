@@ -1,8 +1,8 @@
 <section id="home">
     <div class="container">
-        <a class="menu-btn" (click)="openMenu()" *ngIf="!navigationService.showNavigation">
+        <button class="menu-btn" (click)="openMenu()" *ngIf="!navigationService.showNavigation">
             <span>menu</span>
-        </a>
+        </button>
         <app-navigation *ngIf="navigationService.showNavigation"></app-navigation>
         <div class="box">
             <div class="title">

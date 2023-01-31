@@ -47,25 +47,6 @@
     color: #d8cbcb;
 }
 
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    left: 45px;
-    font-size: 60px;
-    cursor: pointer;
-    color: #fff;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px;
-    }
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
 .according-title {
     margin: 0;
 }
