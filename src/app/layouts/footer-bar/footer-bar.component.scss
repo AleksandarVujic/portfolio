@@ -19,14 +19,6 @@ $blueColor: rgba(33, 150, 243, 1);
     background-size: cover;
 }
 
-.scroll-to-top {
-    padding: 10px 15px;
-    color: #fff;
-    background: rgb(180, 180, 2);
-    border-radius: 50%;
-    cursor: pointer;
-}
-
 .social-links {
     font-size: 48px;
     a {
@@ -35,39 +27,100 @@ $blueColor: rgba(33, 150, 243, 1);
     }
 }
 
-.social-icon {
-    padding: 10px;
-    animation: socialIconGlitch 200ms 10;
-    -webkit-animation: socialIconGlitch 200ms 10;
-    -moz-animation: socialIconGlitch 200ms 10;
-    -o-animation: socialIconGlitch 200ms 10;
-    color: #fff;
-    &:hover {
-        animation: socialIconGlitch 200ms infinite;
-        -webkit-animation: socialIconGlitch 200ms infinite;
-        -moz-animation: socialIconGlitch 200ms infinite;
-        -o-animation: socialIconGlitch 200ms infinite;
-    }
+.social-icon:hover {
+    color: #fc0;
 }
 
-@keyframes socialIconGlitch {
-    0% {
-        text-shadow: 5px 4px $redColor, -5px -6px $blueColor;
-    }
-    25% {
-        text-shadow: -5px -6px $redColor, 5px 4px $blueColor;
-    }
-    50% {
-        text-shadow: 5px -4px $redColor, -8px 4px $blueColor;
-    }
-    75% {
-        text-shadow: -8px -4px $redColor, -5px -4px $blueColor;
-    }
-    100% {
-        text-shadow: -5px 0 $redColor, 5px -4px $blueColor;
-    }
+.bottom-line {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    width: 70%;
 }
 
 .copyrights {
     color: #fff;
+}
+.scroll-btn-wrapper {
+    background: #151515;
+    overflow: hidden;
+}
+.scroll-btn-wrapper button {
+    text-align: center;
+    font-family: "Space Mono", monospace;
+    letter-spacing: 1px;
+    color: #fff;
+    position: relative;
+    height: 50px;
+    width: 190px;
+    font-size: 14px;
+    z-index: 2;
+    transition: 0.01s 0.23s ease-out all;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 55%;
+        background: #202020;
+        z-index: -1;
+        transition: 0.3s ease-in all;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: -5%;
+        top: 5%;
+        height: 90%;
+        width: 5%;
+        background: #fff;
+        z-index: -1;
+        transition: 0.4s 0.02s ease-in all;
+    }
+    &:hover {
+        cursor: pointer;
+        color: transparent;
+        &:before {
+            left: 100%;
+            width: 25%;
+        }
+        &:after {
+            left: 100%;
+            width: 70%;
+        }
+        .icon-right.after:after {
+            left: -80px;
+            color: #fff;
+            transition: 0.2s 0.2s ease all;
+        }
+        .icon-right.after:before {
+            left: -104px;
+            top: 14px;
+            opacity: 0.2;
+            color: #fff;
+        }
+    }
+}
+
+.icon-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    &:after {
+        font-family: "FontAwesome";
+        content: "\f077";
+        font-size: 20px;
+        position: relative;
+        top: 15px;
+        right: 15px;
+        transform: translate3D(0, -50%, 0);
+    }
+    &.after:after {
+        left: -250px;
+        color: black;
+        font-size: 30px;
+        font-weight: 700;
+        top: 10px;
+        transition: 0.15s 0.25s ease left, 0.5s 0.05s ease color;
+    }
 }

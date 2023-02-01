@@ -1,6 +1,53 @@
 .segment-container {
     background: #fafafa;
 
-    // background: url("../../../assets/images/apstract_bg.jpg") -150px 0px repeat-x;
-    // background-size: cover;
+    background: url("../../../assets/images/apstract_bg.jpg") -150px 0px repeat-x;
+    background-size: cover;
+}
+
+$color2: #1f3944;
+$color3: #000;
+
+.contact-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    perspective: 1000;
+}
+
+.contact-button {
+    text-align: center;
+    position: relative;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    color: $color3;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2em;
+    border: 2px solid $color3;
+    border-radius: 7px;
+    padding: 20px 60px 20px 55px;
+    transition: 0.3s ease-in-out;
+
+    span {
+        text-transform: none;
+        position: absolute;
+        color: #fff;
+        top: 20px;
+        left: 50px;
+        opacity: 0;
+        transition: all 0s ease 0s;
+    }
+    &:hover {
+        transition: 0.3s ease-in-out;
+        border: 2px solid $color3;
+        border-radius: 50px;
+        background-color: $color3;
+
+        & > span {
+            opacity: 1;
+            transition: all 0.25s ease-in-out 0.1s;
+        }
+    }
 }

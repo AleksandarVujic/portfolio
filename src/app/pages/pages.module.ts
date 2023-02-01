@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { MidPagesActionComponent } from './mid-pages-action/mid-pages-action.component';
+import { ActionButtonComponent } from '../components/action-button/action-button.component';
 
 @NgModule({
     declarations: [
@@ -11,6 +12,7 @@ import { MidPagesActionComponent } from './mid-pages-action/mid-pages-action.com
         ContactComponent,
         ProjectsComponent,
         MidPagesActionComponent,
+        ActionButtonComponent,
     ],
     imports: [
         BrowserModule,
@@ -20,6 +22,7 @@ import { MidPagesActionComponent } from './mid-pages-action/mid-pages-action.com
         ContactComponent,
         ProjectsComponent,
         MidPagesActionComponent,
+        ActionButtonComponent,
     ],
     providers: [],
     bootstrap: []
