@@ -41,7 +41,6 @@ $secondary_bloc_color: #e91e63;
                 animation-delay: 3.5s;
                 display: flex;
             }
-
             h1 {
                 font-family: "Poppins";
                 color: #fff;
@@ -53,9 +52,7 @@ $secondary_bloc_color: #e91e63;
                 animation-delay: 4.8s;
                 opacity: 0;
                 display: flex;
-                align-items: baseline;
                 position: relative;
-
                 span {
                     width: 0px;
                     height: 0px;
@@ -71,6 +68,13 @@ $secondary_bloc_color: #e91e63;
                     bottom: 13px;
                     right: -12px;
                 }
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .title {
+                justify-content: center;
+                height: auto;
             }
         }
 
