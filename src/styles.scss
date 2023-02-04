@@ -44,7 +44,7 @@ section::-webkit-scrollbar {
 
 .segment-container {
     margin: auto;
-    padding: 6rem 2rem;
+    padding: 6rem 6rem;
 }
 
 .segment-heading_main {
@@ -61,9 +61,9 @@ section::-webkit-scrollbar {
 .segment-heading_main::after {
     content: "";
     position: absolute;
-    top: calc(100% + 1.5rem);
+    top: calc(100% + 1rem);
     height: 5px;
-    width: 3rem;
+    width: 5rem;
     background: #facf0f;
     left: 50%;
     transform: translateX(-50%);

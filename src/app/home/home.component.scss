@@ -71,13 +71,6 @@ $secondary_bloc_color: #e91e63;
             }
         }
 
-        @media screen and (max-width: 550px) {
-            .title {
-                justify-content: center;
-                height: auto;
-            }
-        }
-
         .role {
             width: 100%;
             position: relative;
@@ -121,6 +114,16 @@ $secondary_bloc_color: #e91e63;
                 &:hover {
                     color: #fff;
                 }
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .title {
+                justify-content: center;
+                height: auto;
+            }
+            p {
+                text-align: center;
             }
         }
     }

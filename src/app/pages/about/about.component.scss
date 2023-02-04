@@ -6,4 +6,29 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-button {
+    display: flex;
+    justify-content: start;
+}
+
+.about-skills {
+    display: flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 1em;
+}
+.about-skills .pill {
+    font-size: 14px;
+    font-weight: 700;
+    height: 1em;
+    padding: 1.5em 2em;
+    margin: 5px;
+    border-radius: 1em;
+    background: #ddd;
+    cursor: default;
+    user-select: none;
 }

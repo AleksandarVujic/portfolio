@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "name": "IGS - Ital Gas Storage",
+        "technologies": "Angular 5, Typescript, HTML, CSS, Java (Spring Boot, Spring Data), MSSQL, JHipster, Git",
+        "shortDescription": "Web application for storing and distribution of gas in Italy",
+        "coverImagePath": "../../../assets/images/projects/swap.webp"
+    },
+    {
+        "id": 2,
+        "name": "Sapienza Utilities",
+        "technologies": "Angular 6, HTML, CSS, Git",
+        "shortDescription": "Web application for managing bills for gas, electricity and water of University Sapienza, Rome",
+        "coverImagePath": "../../../assets/images/projects/sapienza.webp"
+    },
+    {
+        "id": 3,
+        "name": "RAS - Internal company apps",
+        "technologies": "Angular 6, Typescript, HTML, CSS, Java, MySQL",
+        "shortDescription": "Internal company application that taking care of employees profiles, absenteeism, traveling costs and management of new applicants for jobs in company",
+        "coverImagePath": "../../../assets/images/projects/default.webp"
+    },
+    {
+        "id": 4,
+        "name": "Poly HUB4G",
+        "technologies": "Angular 6, Typescript, RxJS, HTML, CSS, Jira, Git",
+        "shortDescription": "Mobile and Desktop application that allows users to control the settings on audio devices like headsets and conference devices. Users can customize their ringtone and ring location, configure presence update and more",
+        "coverImagePath": "../../../assets/images/projects/default.webp"
+    }, {
+        "id": 5,
+        "name": "Poly Clariti App",
+        "technologies": "Flutter, Dart, BLoC, Jira, Git",
+        "shortDescription": "Mobile and Desktop application for team communication which combines exchange of instant chat messages, videoconferencing, creating of a polls for the current call, content sharing, control of input and output devices",
+        "coverImagePath": "../../../assets/images/projects/poly_clariti_app.webp"
+    }
+]

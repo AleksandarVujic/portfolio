@@ -2,12 +2,25 @@
     <h2 class="segment-heading">
         <span class="segment-heading_main">Projects</span>
         <span class="segment-heading_subtext ">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged.
+            Some of my projects
         </span>
     </h2>
     <div class="projects-content">
+        <div class="content-wrapper">
+            <div class="card" *ngFor="let project of projects">
+                <a href="#" class="card__card-link"></a>
+                <img class="card__image" src="{{project.coverImagePath}}" alt="{{project.name}} image">
+                <div class="card__text-wrapper">
+                    <h2 class="card__title">{{project.name}}</h2>
+                    <div class="card__post-date">{{project.technologies}}</div>
+                    <div class="card__details-wrapper">
+                        <p class="card__excerpt">{{project.shortDescription}}&hellip;</p>
+                        <a href="#" class="card__learn-more">Learn more<i class="fa fa-angle-double-right"
+                                aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>

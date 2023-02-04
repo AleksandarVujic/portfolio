@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ProjectsDetails } from 'src/app/models/projects_details.model';
+import projectsData from '../../../assets/data/projects.json';
+
 
 @Component({
   selector: 'projects',
@@ -6,5 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
+
+  projects: ProjectsDetails[] = projectsData;
 
 }
