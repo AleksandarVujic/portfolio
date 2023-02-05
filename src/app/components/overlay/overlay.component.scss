@@ -23,7 +23,7 @@
 }
 
 .overlay-content .images-slider {
-    border: 1px solid #fc0;
+    border: 1px solid #f4c23d;
     width: 290px;
     height: 200px;
     margin: 10px;
@@ -65,7 +65,7 @@
 .about-ns .according-title,
 .according-to {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .according-to a:hover {
-    color: #fc0;
+    color: #f4c23d;
     opacity: 1;
 }
 

@@ -9,7 +9,10 @@ import { NavigationService } from '../services/navigation-service/navigation.ser
 })
 export class HomeComponent {
 
-  constructor(public dialogService: DialogService, public navigationService: NavigationService,) { }
+  constructor(
+    public dialogService: DialogService,
+    public navigationService: NavigationService,
+  ) { }
 
   openOvarlayNS() {
     this.dialogService.showDialog = true;

@@ -1,10 +1,7 @@
-$redColor: rgba(244, 67, 54, 1);
-$blueColor: rgba(33, 150, 243, 1);
-
 .top-line {
     height: 3px;
-    background: #fc0;
-    box-shadow: 0 0 35px 15px #fc0, 0 0 50px 25px #fff;
+    background: #f4c23d;
+    box-shadow: 0 0 35px 15px #f4c23d, 0 0 50px 25px #fff;
 }
 .footer-container {
     display: flex;
@@ -28,7 +25,7 @@ $blueColor: rgba(33, 150, 243, 1);
 }
 
 .social-icon:hover {
-    color: #fc0;
+    color: #f4c23d;
 }
 
 .bottom-line {
@@ -86,7 +83,7 @@ $blueColor: rgba(33, 150, 243, 1);
         }
         &:after {
             left: 100%;
-            width: 70%;
+            width: 80%;
         }
         .icon-right.after:after {
             left: -80px;
