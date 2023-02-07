@@ -113,3 +113,23 @@ button {
         padding: 1rem 1rem;
     }
 }
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 1em;
+}
+
+.skills .pill {
+    font-size: 14px;
+    font-weight: 700;
+    height: 1em;
+    padding: 1.5em 2em;
+    margin: 5px;
+    border-radius: 1em;
+    background: #93af56;
+    cursor: default;
+    user-select: none;
+}

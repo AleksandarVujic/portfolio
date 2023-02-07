@@ -25,10 +25,11 @@
             </p>
             <p>Currently, I am a Software Developer at <a href="https://www.endava.com/">Endava d.o.o.</a></p>
             <div class="about-button">
-                <action-button [label]="'More About Me'"></action-button>
+                <!-- HIDDEN UNTIL ADD MOREA ABOUT MYSELF -->
+                <action-button hidden [label]="'More About Me'"></action-button>
             </div>
         </div>
-        <div class="about-skills">
+        <div class="skills">
             <div class="pill" *ngFor="let skill of skills" readonly>{{skill}}</div>
         </div>
     </div>

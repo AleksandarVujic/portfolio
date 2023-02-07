@@ -18,24 +18,6 @@ p {
     justify-content: flex-start;
 }
 
-.about-skills {
-    display: flex;
-    flex-wrap: wrap;
-    height: fit-content;
-    margin: 1em;
-}
-.about-skills .pill {
-    font-size: 14px;
-    font-weight: 700;
-    height: 1em;
-    padding: 1.5em 2em;
-    margin: 5px;
-    border-radius: 1em;
-    background: #ddd;
-    cursor: default;
-    user-select: none;
-}
-
 @media screen and (max-width: 450px) {
     .about-me-content {
         grid-template-columns: 1fr;

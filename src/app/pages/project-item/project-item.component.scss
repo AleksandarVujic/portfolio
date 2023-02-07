@@ -1,5 +1,4 @@
 .page-heading {
-    // background-image: url(.././../../assets/images/projects/default.webp);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,21 +71,10 @@
     text-align: center;
 }
 
-.skills {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: fit-content;
-    margin: 1em;
+.project-details-container_description {
+    text-align: justify;
+    text-indent: 50px;
 }
-.skills .pill {
-    font-size: 14px;
-    font-weight: 700;
-    height: 1em;
-    padding: 1.5em 2em;
-    margin: 5px;
-    border-radius: 1em;
-    background: #ddd;
-    cursor: default;
-    user-select: none;
+.project-details_live-demo-btn {
+    margin: 30px;
 }

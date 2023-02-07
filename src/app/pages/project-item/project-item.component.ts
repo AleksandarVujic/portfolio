@@ -30,4 +30,12 @@ export class ProjectItemComponent {
     this.router.navigate(['home'], { fragment: 'projects' });
   }
 
+  openLiveDemo(): void {
+    // window.open(this.project.liveUrl, "_blank");
+    let link = document.createElement("a");
+    link.href = this.project.liveUrl;
+    link.target = "_blank";
+    link.click();
+  }
+
 }
