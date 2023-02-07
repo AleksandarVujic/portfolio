@@ -35,3 +35,18 @@ p {
     cursor: default;
     user-select: none;
 }
+
+@media screen and (max-width: 450px) {
+    .about-me-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-button,
+    .about-skills {
+        justify-content: center;
+    }
+
+    .about-skills {
+        margin-top: 30px;
+    }
+}
