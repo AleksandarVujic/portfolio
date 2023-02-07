@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { ProjectsDetails } from 'src/app/models/projects_details.model';
 import { ProjectsService } from 'src/app/services/projects-service/projects.service';
-import projectsData from '../../../assets/data/projects.json';
 
 
 @Component({
@@ -19,6 +18,5 @@ export class ProjectsComponent {
   ngOnInit() {
     this.projects = this.porjectsService.getAllProjects();
   }
-
 
 }
