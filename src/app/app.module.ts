@@ -10,7 +10,6 @@ import { OverlayComponent } from './components/overlay/overlay.component';
 import { NavigationComponent } from './layouts/navigation/navigation.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { MouseScrollMeComponent } from './components/mouse-scroll-me/mouse-scroll-me.component';
-import { FooterBarComponent } from './layouts/footer-bar/footer-bar.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { FooterBarComponent } from './layouts/footer-bar/footer-bar.component';
     NavigationComponent,
     CarouselComponent,
     MouseScrollMeComponent,
-    FooterBarComponent,
   ],
   imports: [
     BrowserModule,

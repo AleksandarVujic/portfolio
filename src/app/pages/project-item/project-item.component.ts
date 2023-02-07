@@ -1,4 +1,3 @@
-import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ProjectsDetails } from 'src/app/models/projects_details.model';
@@ -13,6 +12,7 @@ export class ProjectItemComponent {
 
   public project: ProjectsDetails | any;
   public paramId: number = 0;
+  public technologies: string[] = [];
 
   constructor(
     private projectsService: ProjectsService,
@@ -23,6 +23,7 @@ export class ProjectItemComponent {
   ngOnInit(): void {
     this.activatedRoute.params.subscribe((param) => this.paramId = param['id']);
     this.project = this.projectsService.getProjectById(this.paramId);
+    this.technologies = this.project.technologies.split(',');
   }
 
   backToProjects(): void {

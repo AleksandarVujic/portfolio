@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "IGS - Ital Gas Storage",
-        "technologies": "Angular 5, Typescript, HTML, CSS, Java (Spring Boot, Spring Data), MSSQL, JHipster, Git",
+        "technologies": "Angular 5, Typescript, HTML, CSS, Java, Spring Boot, Spring Data, MSSQL, JHipster, Git",
         "shortDescription": "Web application for storing and distribution of gas in Italy",
         "coverImagePath": "../../../assets/images/projects/swap.webp"
     },

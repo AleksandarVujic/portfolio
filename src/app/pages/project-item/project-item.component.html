@@ -1,6 +1,8 @@
 <div class="page-heading"
     style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url({{project.coverImagePath}})">
     <div class="container">
+        <button class="close-btn" (click)='backToProjects()'><span>&times;</span></button>
+
         <div class="heading-content-bg">
             <div class="heading-content">
                 <p><a (click)="backToProjects()">Projects</a> / <em>{{project.name}}</em></p>
@@ -12,8 +14,27 @@
     </div>
 </div>
 
-<section class="segment-container">
-    <div class="segment-heading_subtext">
+<section class="project-details-container">
+    <div class="project-details-container_title">
         PROJECT DETAILS
     </div>
+    <div class="project-details-container_tech">
+        <div class="skills">
+            <div class="pill" *ngFor="let tech of technologies">{{tech}}</div>
+        </div>
+    </div>
+    <div class="project-details-container_description">
+        Accompanied by Qlikview developers, product owners and a data scientist, my role was to design the navigation
+        and to draw the data visualization interfaces. It was a six-month project where the iterative design and the
+        various user tests became meaningful.
+
+        The graphic approach has been minimalist. The challenge was to leave space for the data and to highlight the
+        most important and their correlation. The utilisation contexts of this tool were varied. In particular, mobility
+        constraints had to be overcame, without neglecting the possibility of a more advanced use, in an office context
+        for example.
+    </div>
+</section>
+
+<section id="footer-barId" class="footer-bar">
+    <footer-bar></footer-bar>
 </section>

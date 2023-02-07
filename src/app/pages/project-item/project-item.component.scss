@@ -65,3 +65,28 @@
     color: #fff;
     font-style: normal;
 }
+
+.project-details-container {
+    margin: auto;
+    padding: 6rem 25%;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    margin: 1em;
+}
+.skills .pill {
+    font-size: 14px;
+    font-weight: 700;
+    height: 1em;
+    padding: 1.5em 2em;
+    margin: 5px;
+    border-radius: 1em;
+    background: #ddd;
+    cursor: default;
+    user-select: none;
+}

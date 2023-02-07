@@ -1,8 +1,8 @@
 <div class="overlay">
-    <button class="close-btn" (click)="onCloseNavigation()"><span>&times;</span></button>
+    <button class="close-btn" (click)="onCloseNavigation('')"><span>&times;</span></button>
     <div class="overlay-content">
-        <a href="#aboutId" fragment="about" (click)="onCloseNavigation()">About</a>
-        <a href="#projectsId" fragment="projects" (click)="onCloseNavigation()">Projects</a>
-        <a href="#contactId" fragment="contact" (click)="onCloseNavigation()">Contact</a>
+        <a (click)="onCloseNavigation('about')">About</a>
+        <a (click)="onCloseNavigation('projects')">Projects</a>
+        <a (click)="onCloseNavigation('contact')">Contact</a>
     </div>
 </div>

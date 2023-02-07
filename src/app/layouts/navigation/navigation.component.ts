@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { NavigationService } from 'src/app/services/navigation-service/navigation.service';
 
 @Component({
@@ -8,9 +9,10 @@ import { NavigationService } from 'src/app/services/navigation-service/navigatio
 })
 export class NavigationComponent {
 
-  constructor(private navigationService: NavigationService) { }
+  constructor(private navigationService: NavigationService, public router: Router) { }
 
-  onCloseNavigation() {
+  onCloseNavigation(goToFragment: string): void {
+    this.router.navigate(['home'], { fragment: goToFragment });
     this.navigationService.showNavigation = false;
   }
 }

@@ -7,6 +7,7 @@ import { MidPagesActionComponent } from './mid-pages-action/mid-pages-action.com
 import { ActionButtonComponent } from '../components/action-button/action-button.component';
 import { ProjectItemComponent } from './project-item/project-item.component';
 import { RouterModule } from '@angular/router';
+import { FooterBarComponent } from '../layouts/footer-bar/footer-bar.component';
 
 @NgModule({
     declarations: [
@@ -16,6 +17,7 @@ import { RouterModule } from '@angular/router';
         MidPagesActionComponent,
         ActionButtonComponent,
         ProjectItemComponent,
+        FooterBarComponent,
     ],
     imports: [
         BrowserModule,
@@ -28,6 +30,7 @@ import { RouterModule } from '@angular/router';
         MidPagesActionComponent,
         ActionButtonComponent,
         ProjectItemComponent,
+        FooterBarComponent,
     ],
     providers: [],
     bootstrap: []
