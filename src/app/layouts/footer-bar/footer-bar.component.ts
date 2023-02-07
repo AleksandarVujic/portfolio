@@ -12,6 +12,5 @@ export class FooterBarComponent {
 
   scrollToTop() {
     this.scroll.scrollToPosition([0, 0]);
-
   }
 }
