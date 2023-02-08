@@ -100,7 +100,7 @@ $secondary_bloc_color: #e91e63;
                 animation-delay: 6.7s;
                 opacity: 0;
                 font-weight: 400;
-                font-family: "Lato";
+                font-family: "Roboto";
                 color: #fff;
                 font-size: 16px;
                 text-transform: uppercase;
@@ -254,7 +254,9 @@ a {
 
 a::before {
     content: "";
-    background-color: hsla(196, 100%, 50%, 0.75);
+    color: #fff;
+    background-color: #00bbff;
+    opacity: 0.75;
     position: absolute;
     left: 0;
     bottom: 3px;

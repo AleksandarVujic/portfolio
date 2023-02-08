@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+
 .page-heading {
     background-position: center center;
     background-size: cover;
@@ -19,12 +21,12 @@
 }
 
 @media (max-width: 992px) {
-    .page-heading .heading-content-bg .heading-content {
+    .page-heading .heading-content {
         text-align: center;
     }
 }
 
-.page-heading .heading-content-bg .heading-content h2 {
+.page-heading .heading-content h2 {
     margin-top: 0px;
     margin-bottom: 5px;
     font-size: 42px;
@@ -34,21 +36,21 @@
     text-transform: uppercase;
 }
 
-.page-heading .heading-content-bg .heading-content h2 em {
+.page-heading .heading-content h2 em {
     font-style: normal;
     color: #f4c23d;
 }
 
-.page-heading .heading-content-bg .heading-content p {
+.page-heading .heading-content p {
     margin-bottom: 5px;
-    font-size: 13px;
+    font-size: 18px;
     letter-spacing: 1px;
     font-weight: 300;
     text-transform: uppercase;
     color: #f4c23d;
 }
 
-.page-heading .heading-content-bg .heading-content p a {
+.page-heading .heading-content p a {
     color: #fff;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
@@ -56,11 +58,11 @@
     cursor: pointer;
 }
 
-.page-heading .heading-content-bg .heading-content p a:hover {
+.page-heading .heading-content p a:hover {
     color: #f4c23d;
 }
 
-.page-heading .heading-content-bg .heading-content p em {
+.page-heading .heading-content p em {
     color: #fff;
     font-style: normal;
 }
@@ -77,4 +79,10 @@
 }
 .project-details_live-demo-btn {
     margin: 30px;
+}
+
+.project-details-container_title {
+    text-align: start;
+    font-weight: bold;
+    font-family: "Poppins";
 }

@@ -2,29 +2,32 @@
     style="background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url({{project.coverImagePath}})">
     <div class="container">
         <button class="close-btn" (click)='backToProjects()'><span>&times;</span></button>
-
-        <div class="heading-content-bg">
-            <div class="heading-content">
-                <p><a (click)="backToProjects()">Projects</a> / <em>{{project.name}}</em></p>
-                <h2>{{project.name}}
-                    <em>project</em>
-                </h2>
-            </div>
+        <div class="heading-content">
+            <p><a (click)="backToProjects()">Projects</a> / <em>{{project.name}}</em></p>
+            <h2>{{project.name}}
+                <em>project</em>
+            </h2>
         </div>
     </div>
 </div>
 
 <section class="project-details-container">
+    <div class="project-details-container_title">
+        <h2>Project Description</h2>
+    </div>
     <div class="project-details-container_description">
         {{project.description}}
     </div>
     <div class="project-details-container_tech">
+        <div class="project-details-container_title">
+            <h2>Technologies I used in project</h2>
+        </div>
         <div class="skills">
             <div class="pill" *ngFor="let tech of technologies">{{tech}}</div>
         </div>
     </div>
     <div class="project-details-container_title" *ngIf="project.myWork">
-        Things I did in the project
+        <h2>Things I did in the project</h2>
     </div>
     <div class="project-details-container_description">
         {{project.myWork}}
