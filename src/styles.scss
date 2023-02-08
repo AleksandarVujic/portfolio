@@ -1,7 +1,11 @@
+$color_1: #111;
+$color_2: #555;
+$color_3: #ddd;
+$font-family_1: "Roboto", Arial, Helvetica, sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
 
 * {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: $font-family_1;
 }
 
 html {
@@ -9,7 +13,7 @@ html {
 }
 
 body {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: $font-family_1;
     font-weight: normal;
     font-style: normal;
     font-size: 1em;
@@ -22,7 +26,7 @@ body {
     margin: 0;
     padding: 0;
 }
-// not showing scrollbar but can scroll
+
 body::-webkit-scrollbar {
     display: none;
     -ms-overflow-style: none;
@@ -31,20 +35,6 @@ body::-webkit-scrollbar {
 section::-webkit-scrollbar {
     width: 0 !important;
 }
-
-// Style for scrollbar
-// body::-webkit-scrollbar {
-//     width: 7px;
-// }
-
-// body::-webkit-scrollbar-track {
-//     background: orange;
-// }
-
-// body::-webkit-scrollbar-thumb {
-//     background-color: blue;
-//     border-radius: 0px;
-// }
 
 .segment-container {
     margin: auto;
@@ -60,7 +50,7 @@ section::-webkit-scrollbar {
     text-align: center;
     margin-bottom: 3.5rem;
     position: relative;
-    color: #111;
+    color: $color_1;
 }
 .segment-heading_main::after {
     content: "";
@@ -77,7 +67,7 @@ section::-webkit-scrollbar {
 .segment-heading_subtext {
     display: block;
     text-align: center;
-    color: #555;
+    color: $color_2;
     font-size: 1.5rem;
     font-weight: 600;
     max-width: 70rem;
@@ -96,7 +86,7 @@ button {
     left: 45px;
     font-size: 60px;
     cursor: pointer;
-    color: #ddd;
+    color: $color_3;
     &:hover {
         color: #fff;
     }
