@@ -12,21 +12,21 @@
 </div>
 
 <section class="project-details-container">
-    <div class="project-details-container_title">
+    <div class="segment-heading_subtext ">
         <h2>Project Description</h2>
     </div>
     <div class="project-details-container_description">
         {{project.description}}
     </div>
     <div class="project-details-container_tech">
-        <div class="project-details-container_title">
+        <div class="segment-heading_subtext ">
             <h2>Technologies I used in project</h2>
         </div>
         <div class="skills">
             <div class="pill" *ngFor="let tech of technologies">{{tech}}</div>
         </div>
     </div>
-    <div class="project-details-container_title" *ngIf="project.myWork">
+    <div class="segment-heading_subtext " *ngIf="project.myWork">
         <h2>Things I did in the project</h2>
     </div>
     <div class="project-details-container_description">

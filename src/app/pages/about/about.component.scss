@@ -60,3 +60,12 @@ a:hover::before {
     bottom: 0;
     height: 100%;
 }
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 5px;
+    border: 3px dashed #ffb510;
+    background-size: cover;
+}
