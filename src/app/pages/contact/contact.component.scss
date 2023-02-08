@@ -1,6 +1,9 @@
+$color_1: #000;
+$color_2: #fff;
+
 .segment-container {
     background: #fafafa;
-    background: url("../../../assets/images/apstract_bg.jpg") -150px 0px repeat-x;
+    background: url("../../../assets/images/apstract_bg.jpg") -150px 0 repeat-x;
     background-size: cover;
 }
 
@@ -21,7 +24,7 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.2em;
-    border: 2px solid #000;
+    border: 2px solid $color_1;
     border-radius: 7px;
     padding: 20px 60px 20px 55px;
     transition: 0.3s ease-in-out;
@@ -29,7 +32,7 @@
     span {
         text-transform: none;
         position: absolute;
-        color: #fff;
+        color: $color_2;
         top: 20px;
         left: 50px;
         opacity: 0;
@@ -37,9 +40,9 @@
     }
     &:hover {
         transition: 0.3s ease-in-out;
-        border: 2px solid #000;
+        border: 2px solid $color_1;
         border-radius: 50px;
-        background-color: #000;
+        background-color: $color_1;
 
         & > span {
             opacity: 1;

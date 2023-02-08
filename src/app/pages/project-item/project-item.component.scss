@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+$color_1: #fff;
+$color_2: #f4c23d;
+$background-color_1: #000;
 
+@import "https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap";
 .page-heading {
     background-position: center center;
     background-size: cover;
@@ -7,72 +10,53 @@
     width: 100%;
     padding: 160px 0px 90px 0px;
     margin-bottom: 20px;
-    background-color: #000;
+    background-color: $background-color_1;
+    .heading-content {
+        h2 {
+            margin-top: 0px;
+            margin-bottom: 5px;
+            font-size: 42px;
+            letter-spacing: 2.5px;
+            color: $color_1;
+            font-weight: 700;
+            text-transform: uppercase;
+            em {
+                font-style: normal;
+                color: $color_2;
+            }
+        }
+        p {
+            margin-bottom: 5px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            text-transform: uppercase;
+            color: $color_2;
+            a {
+                color: $color_1;
+                -webkit-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                transition: all 0.3s;
+                cursor: pointer;
+                &:hover {
+                    color: $color_2;
+                }
+            }
+            em {
+                color: $color_1;
+                font-style: normal;
+            }
+        }
+    }
 }
-
 .heading-content {
     margin-left: 30px;
 }
-
-@media (max-width: 992px) {
-    .page-heading {
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 992px) {
-    .page-heading .heading-content {
-        text-align: center;
-    }
-}
-
-.page-heading .heading-content h2 {
-    margin-top: 0px;
-    margin-bottom: 5px;
-    font-size: 42px;
-    letter-spacing: 2.5px;
-    color: #fff;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.page-heading .heading-content h2 em {
-    font-style: normal;
-    color: #f4c23d;
-}
-
-.page-heading .heading-content p {
-    margin-bottom: 5px;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #f4c23d;
-}
-
-.page-heading .heading-content p a {
-    color: #fff;
-    -webkit-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-    cursor: pointer;
-}
-
-.page-heading .heading-content p a:hover {
-    color: #f4c23d;
-}
-
-.page-heading .heading-content p em {
-    color: #fff;
-    font-style: normal;
-}
-
 .project-details-container {
     margin: auto;
     padding: 6rem 25%;
     text-align: center;
 }
-
 .project-details-container_description {
     text-align: justify;
     text-indent: 50px;
@@ -80,7 +64,14 @@
 .project-details_live-demo-btn {
     margin: 30px;
 }
-
 .segment-heading_subtext {
     text-align: start;
+}
+@media (max-width: 992px) {
+    .page-heading {
+        margin-bottom: 30px;
+        .heading-content {
+            text-align: center;
+        }
+    }
 }

@@ -1,3 +1,9 @@
+$color_1: #fff;
+$color_2: #d8cbcb;
+$font-family_1: "Roboto", Arial, sans-serif;
+$background-color_1: #000;
+$background-color_2: #00abe4;
+
 .overlay {
     height: 100%;
     width: 100%;
@@ -5,91 +11,84 @@
     z-index: 70;
     left: 0;
     top: 0;
-    background-color: #000;
+    background-color: $background-color_1;
     overflow: hidden;
     transition: 0.5s;
+    div {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    a {
+        &:hover {
+            color: $color_2;
+        }
+        &:focus {
+            color: $color_2;
+        }
+    }
 }
-
 .overlay-content {
     display: flex;
     height: 100%;
     width: 100%;
     text-align: center;
     margin: 10px;
+    .city-info {
+        flex-direction: column;
+    }
+    .images-slider {
+        border: 1px solid #f4c23d;
+        width: 290px;
+        height: 200px;
+        margin: 10px;
+    }
+    .about-ns {
+        width: 290px;
+        height: 190px;
+        margin: 10px;
+        color: $color_1;
+    }
 }
-
-.overlay-content .city-info {
-    flex-direction: column;
-}
-
-.overlay-content .images-slider {
-    border: 1px solid #f4c23d;
-    width: 290px;
-    height: 200px;
-    margin: 10px;
-}
-
-.overlay-content .about-ns {
-    width: 290px;
-    height: 190px;
-    margin: 10px;
-    color: #fff;
-}
-
-.overlay div {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-    color: #d8cbcb;
-}
-
 .according-title {
     margin: 0;
 }
-
-.about-ns .according-title {
-    font-family: "Roboto", Arial, sans-serif;
-    font-weight: normal;
-    font-style: italic;
-    display: block;
-    text-align: left;
-    line-height: 30px;
-    letter-spacing: 0.02em;
-    margin-bottom: 10px;
+.about-ns {
+    .according-title {
+        font-family: $font-family_1;
+        font-weight: normal;
+        font-style: italic;
+        display: block;
+        text-align: left;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
 }
-
-.about-ns .according-title,
 .according-to {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-
-.according-to {
     margin-top: 20px;
 }
-
 .mapouter {
     position: relative;
     text-align: right;
     height: 400px;
     width: 500px;
 }
-
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
     height: 400px;
     width: 500px;
 }
-
 a {
     text-decoration: none;
-    color: #fff;
+    color: $color_1;
     font-size: 20px;
     font-weight: 700;
     line-height: 1.5;
@@ -97,23 +96,23 @@ a {
     cursor: pointer;
     margin-left: 30px;
     letter-spacing: 2px;
-}
-
-a::before {
-    content: "";
-    color: #fff;
-    background-color: #00abe4;
-    opacity: 0.75;
-    position: absolute;
-    left: 0;
-    bottom: 3px;
-    width: 100%;
-    height: 8px;
-    z-index: -1;
-    transition: all 0.3s ease-in-out;
-}
-
-a:hover::before {
-    bottom: 0;
-    height: 100%;
+    &::before {
+        content: "";
+        color: $color_1;
+        background-color: $background-color_2;
+        opacity: 0.75;
+        position: absolute;
+        left: 0;
+        bottom: 3px;
+        width: 100%;
+        height: 8px;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+        &::before {
+            bottom: 0;
+            height: 100%;
+        }
+    }
 }
