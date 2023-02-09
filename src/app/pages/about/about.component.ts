@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PROFILE_PICTURE } from 'src/app/constants/resources';
 
 @Component({
   selector: 'about',
@@ -7,6 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AboutComponent {
   showMidPage: boolean = false;
+  myselfImg: string = PROFILE_PICTURE;
   skills: String[] = ['Javascript', 'Angular', 'Typescript', 'HTML', 'CSS', 'Flutter', 'Dart', 'Bootstrap', 'Java', 'Spring Framework', 'MySQL', 'Git', 'Jira'];
 
   toggle() {

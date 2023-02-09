@@ -12,8 +12,7 @@
                 <img *ngIf="project.coverImagePath; else defaultImage" class="card__image"
                     src="{{project.coverImagePath}}" alt=" {{project.name}} image">
                 <ng-template #defaultImage>
-                    <img class="card__image" src="../../../../../assets/images/projects/default.webp"
-                        alt="default image">
+                    <img class="card__image" src="{{defaultImgPath}}" alt="default image">
                 </ng-template>
                 <div class="card__text-wrapper">
                     <h2 class="card__title">{{project.name}}</h2>
