@@ -4,7 +4,13 @@ $main_bloc_color: #ffb510;
 $secondary_bloc_color: #e91e63;
 
 .container {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    // background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    //     url(../../assets/images/home_bg.jpg);
+
+    // background-image: linear-gradient(to bottom right, rgba(44, 117, 255, 0.7), rgba(58, 125, 249, 0.7)),
+    //     url(../../assets/images/home_bg.jpg);
+
+    background-image: linear-gradient(to bottom right, rgba(8, 12, 19, 0.7), rgba(0, 102, 102, 0.85)),
         url(../../assets/images/home_bg.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -49,7 +55,7 @@ $secondary_bloc_color: #e91e63;
                 -moz-animation: mainFadeIn 2s forwards;
                 -o-animation: mainFadeIn 2s forwards;
                 animation: mainFadeIn 2s forwards;
-                animation-delay: 4.8s;
+                animation-delay: 4.5s;
                 opacity: 0;
                 display: flex;
                 position: relative;

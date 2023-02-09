@@ -4,19 +4,24 @@ $background-color_1: #00bbff;
 .segment-container {
     background: #fafafa;
 }
+
 .about-me-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: justify;
     text-justify: inter-word;
 }
+
 p {
     text-indent: 50px;
 }
+
 .about-button {
     display: flex;
     justify-content: flex-start;
+    margin-top: 30px;
 }
+
 a {
     text-decoration: none;
     color: $color_1;
@@ -44,6 +49,7 @@ a {
         }
     }
 }
+
 img {
     width: 200px;
     height: 200px;
@@ -53,6 +59,7 @@ img {
     border: 3px dashed #ffb510;
     background-size: cover;
 }
+
 @media screen and (max-width: 450px) {
     .about-me-content {
         grid-template-columns: 1fr;
@@ -64,4 +71,8 @@ img {
         justify-content: center;
         margin-top: 30px;
     }
+}
+
+img:hover {
+    scale: 1.5;
 }
