@@ -38,7 +38,17 @@
         </div>
     </div>
 </div>
-
+<div class="button-wrapper">
+    <div>
+        <span class="segment-heading_subtext">
+            Click on the + for more details
+        </span>
+    </div>
+    <action-button (onClick)="toggle()">
+        <i *ngIf="!showMidPage" class="fa fa-plus" aria-hidden="true"></i>
+        <i *ngIf="showMidPage" class="fa fa-minus" aria-hidden="true"></i>
+    </action-button>
+</div>
 <section id="mid-pages" class="mid-pages" name="mid-pages">
-    <mid-pages-action><action-button></action-button></mid-pages-action>
+    <mid-pages-action [show]="showMidPage"><action-button></action-button></mid-pages-action>
 </section>

@@ -8,6 +8,7 @@ import { ActionButtonComponent } from '../components/action-button/action-button
 import { ProjectItemComponent } from './project-item/project-item.component';
 import { RouterModule } from '@angular/router';
 import { FooterBarComponent } from '../layouts/footer-bar/footer-bar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -22,6 +23,7 @@ import { FooterBarComponent } from '../layouts/footer-bar/footer-bar.component';
     imports: [
         BrowserModule,
         RouterModule,
+        BrowserAnimationsModule,
     ],
     exports: [
         AboutComponent,
