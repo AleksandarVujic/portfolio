@@ -24,14 +24,5 @@ export class MidPagesActionComponent {
 
   constructor() { }
 
-  downloadFile() {
-    let link = document.createElement("a");
-    link.download = "Aleksandar Vujić";
-    link.href = 'assets/files/aleksandar_vujic.pdf';
-    link.click();
-  }
-
-
-
 }
 

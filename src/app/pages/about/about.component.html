@@ -30,7 +30,13 @@
                     d.o.o.</a></p>
             <div class="about-button">
                 <!-- HIDDEN UNTIL ADD MOREA ABOUT MYSELF -->
-                <action-button hidden [label]="'More About Me'"></action-button>
+                <action-button (onClick)="toggle()" hidden>
+                    <i *ngIf="!showMidPage" class="fa fa-plus" aria-hidden="true"></i>
+                    <i *ngIf="showMidPage" class="fa fa-minus" aria-hidden="true"></i>
+                </action-button>
+                <action-button (onClick)="downloadFile()" label="Download My Resume ">
+                    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </action-button>
             </div>
         </div>
         <div class="skills">
@@ -38,17 +44,6 @@
         </div>
     </div>
 </div>
-<div class="button-wrapper">
-    <div>
-        <span class="segment-heading_subtext">
-            Click on the + for more details
-        </span>
-    </div>
-    <action-button (onClick)="toggle()">
-        <i *ngIf="!showMidPage" class="fa fa-plus" aria-hidden="true"></i>
-        <i *ngIf="showMidPage" class="fa fa-minus" aria-hidden="true"></i>
-    </action-button>
-</div>
-<section id="mid-pages" class="mid-pages" name="mid-pages">
+<!-- <section id="mid-pages" class="mid-pages" name="mid-pages">
     <mid-pages-action [show]="showMidPage"><action-button></action-button></mid-pages-action>
-</section>
+</section> -->

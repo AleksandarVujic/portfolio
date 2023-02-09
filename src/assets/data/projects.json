@@ -24,7 +24,7 @@
         "name": "RAS - Internal company apps",
         "technologies": "Angular 6, Typescript, HTML, CSS, Java, MySQL",
         "description": "Internal company application that taking care of employees profiles, absenteeism, traveling costs and management of new applicants for jobs in company.",
-        "coverImagePath": "../../../assets/images/projects/default.webp",
+        "coverImagePath": "",
         "myWork": "Working on maintaining and developing new features in this big system. Working on Front-End side in Angular 6. Development of REST APIs to support operations with database(PostgreSQL). Various data retrieving and manipulating requests.",
         "status": "finished",
         "liveUrl": ""
@@ -34,7 +34,7 @@
         "name": "Poly HUB4G",
         "technologies": "Angular 6, Typescript, RxJS, HTML, CSS, Jira, Git",
         "description": "Mobile and Desktop application that allows users to control the settings on audio devices like headsets and conference devices. Users can customize their ringtone and ring location, configure presence update and more",
-        "coverImagePath": "../../../assets/images/projects/default.webp",
+        "coverImagePath": "",
         "myWork": "Development of services for various data retrieving and manipulation requested by front-end side which I’ve done in Angular 6. Creating functionalities for locating headset using Open Street Maps API and Google Maps API. Actively participated in creating UX and UI for the application",
         "status": "terminated",
         "liveUrl": ""
@@ -43,7 +43,7 @@
         "name": "**classified**",
         "technologies": "Flutter, Dart, BLoC, Jira, Git",
         "description": "Mobile and Desktop application for team communication which combines exchange of instant chat messages, videoconferencing, creating of a polls for the current call, content sharing, control of input and output devices as well as additional functionality like encryption of conference calls and more.",
-        "coverImagePath": "../../../assets/images/projects/default.webp",
+        "coverImagePath": "",
         "myWork": "",
         "status": "inProgress",
         "liveUrl": ""

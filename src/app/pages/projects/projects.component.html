@@ -9,7 +9,12 @@
         <div class="content-wrapper">
             <div class="card" *ngFor="let project of projects">
                 <a class="card__card-link" [routerLink]="['/project-details', project.id]"></a>
-                <img class="card__image" src="{{project.coverImagePath}}" alt="{{project.name}} image">
+                <img *ngIf="project.coverImagePath; else defaultImage" class="card__image"
+                    src="{{project.coverImagePath}}" alt=" {{project.name}} image">
+                <ng-template #defaultImage>
+                    <img class="card__image" src="../../../../../assets/images/projects/default.webp"
+                        alt="default image">
+                </ng-template>
                 <div class="card__text-wrapper">
                     <h2 class="card__title">{{project.name}}</h2>
                     <div class="card__post-date">{{project.technologies}}</div>
