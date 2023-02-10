@@ -32,6 +32,14 @@ body::-webkit-scrollbar {
     -ms-overflow-style: none;
 }
 
+::selection {
+    background-color: #259f6c;
+}
+
+p {
+    color: #5a7077;
+}
+
 section::-webkit-scrollbar {
     width: 0 !important;
 }
@@ -58,7 +66,7 @@ section::-webkit-scrollbar {
     top: calc(100% + 1rem);
     height: 5px;
     width: 5rem;
-    background: #facf0f;
+    background: #259f6c;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 5px;
@@ -124,7 +132,7 @@ button {
     padding: 1.5em 2em;
     margin: 5px;
     border-radius: 1em;
-    background: #259F6C;
+    background: #259f6c;
     cursor: default;
     user-select: none;
     text-transform: uppercase;

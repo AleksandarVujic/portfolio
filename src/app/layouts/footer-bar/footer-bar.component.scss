@@ -1,5 +1,5 @@
 .top-line {
-    height: 3px;
+    height: 1px;
     background: #140303;
     box-shadow: 0 0 35px 15px #140303, 0 0 50px 25px #fff;
 }
@@ -25,7 +25,8 @@
 }
 
 .social-icon:hover {
-    color: #0D63A5;
+    color: #2c75ff
+    ;
 }
 
 .bottom-line {
@@ -114,7 +115,7 @@
     }
     &.after:after {
         left: -250px;
-        color: black;
+        color: #000;
         font-size: 30px;
         font-weight: 700;
         top: 10px;

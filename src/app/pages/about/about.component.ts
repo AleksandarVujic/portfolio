@@ -7,7 +7,7 @@ import { PROFILE_PICTURE } from 'src/app/constants/resources';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  showMidPage: boolean = false;
+  showMidPage: boolean = true;
   myselfImg: string = PROFILE_PICTURE;
   skills: String[] = ['Javascript', 'Angular', 'Typescript', 'HTML', 'CSS', 'Flutter', 'Dart', 'Bootstrap', 'Java', 'Spring Framework', 'MySQL', 'Git', 'Jira'];
 

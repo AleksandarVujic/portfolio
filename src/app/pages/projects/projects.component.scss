@@ -1,6 +1,6 @@
 $color_1: #fff;
 $color_2: #ccc;
-$color_3: yellow;
+$color_3: #259f6c;
 $color_4: #bbb;
 $color_5: #888;
 $background-color_1: rgba(0, 0, 0, 0.6);
@@ -13,8 +13,8 @@ $background-color_1: rgba(0, 0, 0, 0.6);
     justify-content: center;
     padding: 0.5rem;
 }
+
 .card {
-    border: 0px solid aqua;
     margin: 0.5rem;
     position: relative;
     height: 12rem;
@@ -41,6 +41,7 @@ $background-color_1: rgba(0, 0, 0, 0.6);
         z-index: 0;
     }
 }
+
 .card__card-link {
     position: absolute;
     top: 0;
@@ -49,6 +50,7 @@ $background-color_1: rgba(0, 0, 0, 0.6);
     height: 100%;
     z-index: 1;
 }
+
 .card__image {
     width: 100%;
     height: 100%;
@@ -60,6 +62,7 @@ $background-color_1: rgba(0, 0, 0, 0.6);
     position: relative;
     z-index: -1;
 }
+
 .card__text-wrapper {
     position: absolute;
     bottom: 0rem;
@@ -67,25 +70,34 @@ $background-color_1: rgba(0, 0, 0, 0.6);
     color: $color_1;
     transition: background-color 1.5s ease;
 }
+
 .card__title {
     transition: color 1s ease;
     margin-bottom: 0.5rem;
 }
+
 .card__post-date {
     font-size: 0.7rem;
     margin-bottom: 0.5rem;
     color: $color_2;
 }
+
 .card__details-wrapper {
     max-height: 0;
     opacity: 0;
     transition: max-height 1.5s ease, opacity 1s ease;
 }
+
 .card__excerpt {
     font-weight: 300;
 }
+
+p {
+    color: $color_1;
+}
+
 .card__learn-more {
-    background: black;
+    background: #000;
     color: $color_4;
     display: block;
     padding: 0.4rem 0.6rem;
@@ -116,6 +128,7 @@ $background-color_1: rgba(0, 0, 0, 0.6);
         }
     }
 }
+
 @media (min-width: 900px) {
     .card {
         height: 20rem;

@@ -1,5 +1,6 @@
 $color_1: #000;
-$background-color_1: #00bbff;
+$color_green: #259f6c;
+$background-color_1: #2c75ff;
 
 .segment-container {
     background: #fafafa;
@@ -10,10 +11,6 @@ $background-color_1: #00bbff;
     grid-template-columns: 1fr 1fr;
     text-align: justify;
     text-justify: inter-word;
-}
-
-p {
-    text-indent: 50px;
 }
 
 .about-button {
@@ -39,7 +36,7 @@ a {
         left: 0;
         bottom: 3px;
         width: 100%;
-        height: 6px;
+        height: 3px;
         transition: all 0.3s ease-in-out;
     }
     &:hover {
@@ -55,8 +52,8 @@ a {
     height: 200px;
     border-radius: 50%;
     float: left;
-    margin-right: 5px;
-    border: 3px dashed #259F6C;
+    margin-right: 15px;
+    border: 3px dashed $color_green;
     background-size: cover;
     transition: transform 0.4s;
     -webkit-transition: -webkit-transform 0.4s;

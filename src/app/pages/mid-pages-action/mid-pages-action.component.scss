@@ -1,7 +1,8 @@
 .mid-pages_wrapper {
-    position: absolute;
+    // position: absolute;
+    display: block;
     z-index: 10;
-    height: 110px;
+    height: 150px;
     width: 100%;
     background: #259f6c;
 }

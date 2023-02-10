@@ -15,9 +15,9 @@
     <div class="segment-heading_subtext ">
         <h2>Project Description</h2>
     </div>
-    <div class="project-details-container_description">
+    <p class="project-details-container_description">
         {{project.description}}
-    </div>
+    </p>
     <div class="project-details-container_tech">
         <div class="segment-heading_subtext ">
             <h2>Technologies I used in project</h2>
@@ -29,9 +29,9 @@
     <div class="segment-heading_subtext " *ngIf="project.myWork">
         <h2>Things I did in the project</h2>
     </div>
-    <div class="project-details-container_description">
+    <p class="project-details-container_description">
         {{project.myWork}}
-    </div>
+    </p>
     <div class="project-details_live-demo-btn" *ngIf="project.liveUrl">
         <action-button label="Live Demo" (onClick)="openLiveDemo()"></action-button>
     </div>

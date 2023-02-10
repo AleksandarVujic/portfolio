@@ -10,22 +10,25 @@
             <div class="image-container">
                 <img src="{{myselfImg}}" alt="Me, Myeself and I">
             </div>
-
             <p>
-                I am a Software Developer, skilled in writing clean code with strong knowledge of backend
-                development, mainly using Java on Spring Framework and JavaScript with Angular framework along HTML5,
-                CSS3 and Bootstrap 4 for responsive Frontend development. Experienced with modern tooling such as Git,
-                Jira and excited to pick up the right tools for the job. Learning is a passion of mine, so I am
-                constantly learning how I can improve on already existing skills and learn new libraries or frameworks
-                to expand my skill set. I am highly motivated about new technologies such as Internet of Things and
-                E-commerce web apps.
+                I am a <strong>Software Developer</strong> with several years of professional experiene, skilled in
+                writing clean code
+                with strong knowledge of <strong>Front-end
+                    development</strong>, mainly <strong>Javascript</strong> and <strong>Angular</strong> framework
+                alongside with
+                HTML5,
+                CSS3 and Bootstrap 4 for responsive Front-end development. Beside Front-end technologies I have
+                experiene
+                in Back-end using Java on Spring Framework. Experienced with modern tooling such as Git,
+                Jira and excited to pick up the right tools for the job.
             </p>
             <p>
-                I have participated in a number of intense tech programs where I acquired both technical and soft
-                skills. I have also acquired
-                high level programming skills from online courses on
-                renowned platforms like Udemy and Pluralsight. Software developer with a
-                strong discipline to learn, improve, and evolve.
+                Learning is a passion of mine, so I am
+                constantly learning how I can improve on already existing skills and learn new libraries or frameworks
+                to expand my skill set. Also like to share my knowledge through the mentoring programs and live lecture,
+                to help people improve their knowledge so our Dev Community can growe.
+                I am highly motivated about new technologies such as <strong>Internet of Things</strong> and
+                <strong>E-commerce</strong> web apps.
             </p>
             <p>Currently, I am a Software Developer at <a target="_blank" href="https://www.endava.com/">Endava
                     d.o.o.</a></p>
@@ -35,7 +38,7 @@
                     <i *ngIf="!showMidPage" class="fa fa-plus" aria-hidden="true"></i>
                     <i *ngIf="showMidPage" class="fa fa-minus" aria-hidden="true"></i>
                 </action-button>
-                <action-button (onClick)="downloadFile()" label="Download My Resume ">
+                <action-button (onClick)="downloadFile()" label="Download My Resume " hidden>
                     <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
                 </action-button>
             </div>
@@ -45,6 +48,10 @@
         </div>
     </div>
 </div>
-<!-- <section id="mid-pages" class="mid-pages" name="mid-pages">
-    <mid-pages-action [show]="showMidPage"><action-button></action-button></mid-pages-action>
-</section> -->
+<section id="mid-pages" class="mid-pages" name="mid-pages">
+    <mid-pages-action [show]="showMidPage">
+        <action-button (onClick)="downloadFile()" label="Download My Resume ">
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+        </action-button>
+    </mid-pages-action>
+</section>
