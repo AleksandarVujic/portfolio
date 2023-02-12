@@ -49,28 +49,37 @@ $background-color_1: #000;
         }
     }
 }
+
 .heading-content {
     margin-left: 30px;
 }
+
 .project-details-container {
     margin: auto;
     padding: 6rem 25%;
     text-align: center;
 }
+
 .project-details-container_description {
     text-align: justify;
 }
+
 .project-details_live-demo-btn {
     margin: 30px;
 }
+
 .segment-heading_subtext {
     text-align: start;
 }
+
 @media (max-width: 992px) {
     .page-heading {
         margin-bottom: 30px;
         .heading-content {
             text-align: center;
         }
+    }
+    .project-details-container {
+        padding: 3rem 1rem;
     }
 }

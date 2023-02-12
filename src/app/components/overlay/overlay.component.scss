@@ -35,7 +35,7 @@ $background-color_2: #2c75ff;
     text-align: center;
     margin: 10px;
     .city-info {
-        flex-direction: column;
+        flex-direction: row;
     }
     .images-slider {
         border: 1px solid #259f6c;
@@ -114,5 +114,24 @@ a {
             bottom: 0;
             height: 100%;
         }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .city-info {
+        flex-direction: column;
+    }
+
+    .overlay div {
+        flex-direction: column;
+    }
+
+    .mapouter{
+        text-align: center;
+    }
+
+    .mapouter iframe{
+        height: 300px;
+        width: 300px;
     }
 }
