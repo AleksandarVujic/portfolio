@@ -5,7 +5,7 @@
         "technologies": "Angular 5, Typescript, HTML, CSS, Java, Spring Boot, Spring Data, MSSQL, JHipster, Git",
         "description": "Web application for storing and distribution of gas in Italy",
         "coverImagePath": "../../../assets/images/projects/swap.webp",
-        "myWork": "Developed microservices for adding new app features (file storage, user creation, administration, gas storage data microservices, tickets for maintaining app...). Development of RESTful web services(Spring Boot) for various data retrieving and manipulation requested by front-end side which I’ve done in Angular 5. Implementation of Angular smart tables for data representation, adding clone, editing data and graph filtering by time functionalities. Designed and implemented various chart representation of data using AmCharts.",
+        "myWork": "Developed microservices for adding new app features (file storage, user creation, administration, gas storage data microservices, tickets for maintaining the app, etc.). Development of RESTful web services (Spring Boot) for various data retrieval and manipulation requests by the front-end side, which I’ve done in Angular 5. Implementation of Angular smart tables for data representation, adding clones, editing data, and graph filtering by time functionalities. Designed and implemented various chart representations of data using AmCharts.",
         "status": "finished",
         "liveUrl": "https://igs.eu/dashboard/main_page_eng.html#"
     },
@@ -15,7 +15,7 @@
         "technologies": "Angular 6, HTML, CSS, Git",
         "description": "Web application for managing bills for gas, electricity and water of University Sapienza, Rome",
         "coverImagePath": "../../../assets/images/projects/sapienza.webp",
-        "myWork": "Working on Front-End side in Angular 6. Various data retrieving and manipulating requests. Implementation functionality for filtering bills and invoices, charts data representation, upload different types of files.",
+        "myWork": "Working on Front-End side in Angular 6. Various data retrieval and manipulation requests. Implementation functionality for filtering bills and invoices, charts data representation, and uploading different types of files.",
         "status": "finished",
         "liveUrl": ""
     },
@@ -23,29 +23,29 @@
         "id": 3,
         "name": "RAS - Internal company apps",
         "technologies": "Angular 6, Typescript, HTML, CSS, Java, MySQL",
-        "description": "Internal company application that taking care of employees profiles, absenteeism, traveling costs and management of new applicants for jobs in company.",
+        "description": "Internal company application that takes care of employee profiles, absenteeism, travel costs, and the management of new applicants for jobs in the company.",
         "coverImagePath": "",
-        "myWork": "Working on maintaining and developing new features in this big system. Working on Front-End side in Angular 6. Development of REST APIs to support operations with database(PostgreSQL). Various data retrieving and manipulating requests.",
+        "myWork": "Working on maintaining and developing new features in this big system. Working on Front-End side in Angular 6. Development of REST APIs to support operations with databases (PostgreSQL). Various data retrieval and manipulation requests.",
         "status": "finished",
         "liveUrl": ""
     },
     {
         "id": 4,
-        "name": "Poly HUB4G",
+        "name": "**classified**",
         "technologies": "Angular 6, Typescript, RxJS, HTML, CSS, Jira, Git",
-        "description": "Mobile and Desktop application that allows users to control the settings on audio devices like headsets and conference devices. Users can customize their ringtone and ring location, configure presence update and more",
+        "description": "Mobile and Desktop application that allow users to control the settings on audio devices like headsets and conference devices. Users can customize their ringtone and ring location, configure presence updates, and more.",
         "coverImagePath": "",
-        "myWork": "Development of services for various data retrieving and manipulation requested by front-end side which I’ve done in Angular 6. Creating functionalities for locating headset using Open Street Maps API and Google Maps API. Actively participated in creating UX and UI for the application",
+        "myWork": "Development of services for various data retrieval and manipulation requests by the front-end side, which I’ve done in Angular 6. Creating functionalities for locating headsets using the Open Street Maps API and Google Maps API. Actively participated in creating the UX and UI for the application.",
         "status": "terminated",
         "liveUrl": ""
     }, {
         "id": 5,
         "name": "**classified**",
         "technologies": "Flutter, Dart, BLoC, Jira, Git",
-        "description": "Mobile and Desktop application for team communication which combines exchange of instant chat messages, videoconferencing, creating of a polls for the current call, content sharing, control of input and output devices as well as additional functionality like encryption of conference calls and more.",
+        "description": "Mobile and Desktop application for team communication that combine the exchange of instant chat messages, videoconferencing, creating polls for the current call, content sharing, control of input and output devices, as well as additional functionality like encryption of conference calls and more.",
         "coverImagePath": "",
-        "myWork": "",
-        "status": "inProgress",
+        "myWork": "Development app from scratch. Identify the functionality required by the project. Post-deployment code modifications that mitigate or prevent problems. Working on unit and widget tests.",
+        "status": "finished",
         "liveUrl": ""
     }
 ]
