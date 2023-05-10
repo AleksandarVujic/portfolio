@@ -40,7 +40,7 @@ $secondary_color: #2c75ff;
                 -webkit-animation: mainBlock 1.5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
                 -moz-animation: mainBlock 1.5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
                 -o-animation: mainBlock 1.5s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                animation-delay: 3.5s;
+                animation-delay: 3.0s;
                 display: flex;
             }
             h1 {
@@ -51,7 +51,7 @@ $secondary_color: #2c75ff;
                 -moz-animation: mainFadeIn 2s forwards;
                 -o-animation: mainFadeIn 2s forwards;
                 animation: mainFadeIn 2s forwards;
-                animation-delay: 4.5s;
+                animation-delay: 4.0s;
                 opacity: 0;
                 display: flex;
                 position: relative;
@@ -63,7 +63,7 @@ $secondary_color: #2c75ff;
                     border-radius: 50%;
                     background: $main_color;
                     animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                    animation-delay: 5.5s;
+                    animation-delay: 5.0s;
                     margin-left: 5px;
                     margin-top: -10px;
                     position: absolute;
@@ -90,7 +90,7 @@ $secondary_color: #2c75ff;
                 -webkit-animation: secondaryBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
                 -moz-animation: secondaryBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
                 -o-animation: secondaryBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                animation-delay: 5.5s;
+                animation-delay: 5.0s;
                 display: flex;
             }
 
@@ -99,7 +99,7 @@ $secondary_color: #2c75ff;
                 -webkit-animation: secFadeIn 2s forwards;
                 -moz-animation: secFadeIn 2s forwards;
                 -o-animation: secFadeIn 2s forwards;
-                animation-delay: 6.7s;
+                animation-delay: 6.2s;
                 opacity: 0;
                 font-weight: 400;
                 font-family: "Roboto";
