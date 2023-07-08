@@ -19,24 +19,7 @@ $color_2: #fff;
         top: 29%;
     }
 }
-@-moz-keyframes ani-mouse {
-    0% {
-        opacity: 1;
-        top: 29%;
-    }
-    15% {
-        opacity: 1;
-        top: 50%;
-    }
-    50% {
-        opacity: 0;
-        top: 50%;
-    }
-    100% {
-        opacity: 0;
-        top: 29%;
-    }
-}
+
 @keyframes ani-mouse {
     0% {
         opacity: 1;
@@ -97,7 +80,6 @@ $color_2: #fff;
             background: #fff;
             border-radius: 50%;
             -webkit-animation: ani-mouse 1.5s linear infinite;
-            -moz-animation: ani-mouse 1.5s linear infinite;
             animation: ani-mouse 1.5s linear infinite;
         }
     }

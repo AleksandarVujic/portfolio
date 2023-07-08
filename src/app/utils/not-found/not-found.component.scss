@@ -20,7 +20,6 @@ $font-family_1: "Fira Mono", monospace;
 div {
     animation: glitch 1s linear infinite;
     -webkit-animation: glitch 1s linear infinite;
-    -moz-animation: glitch 1s linear infinite;
     -o-animation: glitch 1s linear infinite;
     &:before {
         content: attr(title);
