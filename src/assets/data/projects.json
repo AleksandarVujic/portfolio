@@ -55,7 +55,7 @@
     "technologies": "Angular 16, Typescript, HTML, CSS, Unsplash API",
     "description": "Travel Blog application for demonstrating tools which increase Angular performance",
     "coverImagePath": "../../../assets/images/projects/pathfinder.webp",
-    "myWork": "Created Pathfinder travel blog from scratch. This application was created as demo application for demonstrating tools and techniques for optimizing and increasing Angular performance. In this app I covered most up-to-date information about SSR (Server-Side Rendering) hydration as well as NgOptimizingImage for optimization of image rendering and responsiveness. Also, I implement virtual scrolling from rx-anduglar library. For data source, I use UnsplashAPI to fetch images which are essential for demonstrating new Angular tool NgOptimizer, as well as loading a lot of data since app is fetching very large images.",
+    "myWork": "Created Pathfinder travel blog from scratch. This application was created as demo application for demonstrating tools and techniques for optimizing and increasing Angular performance. In this app I covered most up-to-date information about SSR (Server-Side Rendering) hydration as well as NgOptimizingImage for optimization of image rendering and responsiveness. Also, I implement virtual scrolling from rx-angular library. For data source, I use UnsplashAPI to fetch images which are essential for demonstrating new Angular tool NgOptimizer, as well as loading a lot of data since app is fetching very large images.",
     "status": "finished",
     "liveUrl": "https://pathfinder-travel-blog.web.app"
   }
