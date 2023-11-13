@@ -9,18 +9,22 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'home', component: HomeComponent },
   { path: 'project-details/:id', component: ProjectItemComponent },
-  { path: 'not-found', component: NotFoundComponent, data: { message: 'Page not found!' } },
+  {
+    path: 'not-found',
+    component: NotFoundComponent,
+    data: { message: 'Page not found!' },
+  },
   { path: '**', redirectTo: '/not-found' },
-
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    useHash: true,
-    scrollPositionRestoration: 'top',
-    anchorScrolling: 'enabled',
-    scrollOffset: [0, 64],
-  })],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, {
+      useHash: true,
+      scrollPositionRestoration: 'top',
+      anchorScrolling: 'enabled',
+    }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

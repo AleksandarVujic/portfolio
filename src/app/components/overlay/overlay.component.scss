@@ -135,3 +135,9 @@ a {
         width: 300px;
     }
 }
+
+@media (width<600px){
+    .overlay-content {
+        margin-top:60px
+    }
+}
