@@ -12,6 +12,12 @@
 </div>
 
 <section class="project-details-container">
+    <div class="ribbon-wrapper">
+        <div class="ribbon" [ngStyle]="{'background-color': project.status==='Terminated' ? 'red' : (project.status==='In Progress' ? 'blue' :
+        'green') }">
+            {{project.status}}
+        </div>
+    </div>
     <div class="segment-heading_subtext ">
         <h2>Project Description</h2>
     </div>
