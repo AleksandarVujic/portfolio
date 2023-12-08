@@ -6,7 +6,7 @@
     "description": "Web application for storing and distribution of gas in Italy",
     "coverImagePath": "../../../assets/images/projects/swap.webp",
     "myWork": "Developed microservices for adding new app features (file storage, user creation, administration, gas storage data microservices, tickets for maintaining the app, etc.). Development of RESTful web services (Spring Boot) for various data retrieval and manipulation requests by the front-end side, which I’ve done in Angular 5. Implementation of Angular smart tables for data representation, adding clones, editing data, and graph filtering by time functionalities. Designed and implemented various chart representations of data using AmCharts.",
-    "status": "finished",
+    "status": "Finished",
     "liveUrl": "https://igs.eu/dashboard/main_page_eng.html#"
   },
   {
@@ -16,7 +16,7 @@
     "description": "Web application for managing bills for gas, electricity and water of University Sapienza, Rome",
     "coverImagePath": "../../../assets/images/projects/sapienza.webp",
     "myWork": "Working on Front-End side in Angular 6. Various data retrieval and manipulation requests. Implementation functionality for filtering bills and invoices, charts data representation, and uploading different types of files.",
-    "status": "finished",
+    "status": "Finished",
     "liveUrl": ""
   },
   {
@@ -26,7 +26,7 @@
     "description": "Internal company application that takes care of employee profiles, absenteeism, travel costs, and the management of new applicants for jobs in the company.",
     "coverImagePath": "",
     "myWork": "Working on maintaining and developing new features in this big system. Working on Front-End side in Angular 6. Development of REST APIs to support operations with databases (PostgreSQL). Various data retrieval and manipulation requests.",
-    "status": "finished",
+    "status": "Finished",
     "liveUrl": ""
   },
   {
@@ -36,7 +36,7 @@
     "description": "Mobile and Desktop application that allow users to control the settings on audio devices like headsets and conference devices. Users can customize their ringtone and ring location, configure presence updates, and more.",
     "coverImagePath": "",
     "myWork": "Development of services for various data retrieval and manipulation requests by the front-end side, which I’ve done in Angular 6. Creating functionalities for locating headsets using the Open Street Maps API and Google Maps API. Actively participated in creating the UX and UI for the application.",
-    "status": "terminated",
+    "status": "Terminated",
     "liveUrl": ""
   },
   {
@@ -46,17 +46,27 @@
     "description": "Mobile and Desktop application for team communication that combine the exchange of instant chat messages, videoconferencing, creating polls for the current call, content sharing, control of input and output devices, as well as additional functionality like encryption of conference calls and more.",
     "coverImagePath": "",
     "myWork": "Development app from scratch. Identify the functionality required by the project. Post-deployment code modifications that mitigate or prevent problems. Working on unit and widget tests.",
-    "status": "finished",
+    "status": "Finished",
     "liveUrl": ""
   },
   {
     "id": 6,
     "name": "Pathfinder.",
     "technologies": "Angular 16, Typescript, HTML, CSS, Unsplash API",
-    "description": "Travel Blog application for demonstrating tools which increase Angular performance",
+    "description": "Pathfinder leverages the power of Server Side Rendering (SSR) coupled with non-destructive hydration, seamlessly blending server-generated content with client-side interactivity. This sophisticated approach ensures lightning-fast initial page loads, providing users with a swift and engaging experience right from the get-go. Pathfinder showcases Angular's directive NgOptimizedImage, a powerful tool optimizing image loading and rendering for improved performance. This not only enhances the visual appeal of the travel blog but also contributes to a smoother overall browsing experience. Application incorporates the revolutionary virtual scrolling feature from the rx-angular library. This innovative addition dynamically loads and unloads elements as the user scrolls.",
     "coverImagePath": "../../../assets/images/projects/pathfinder.webp",
     "myWork": "Created Pathfinder travel blog from scratch. This application was created as demo application for demonstrating tools and techniques for optimizing and increasing Angular performance. In this app I covered most up-to-date information about SSR (Server-Side Rendering) hydration as well as NgOptimizingImage for optimization of image rendering and responsiveness. Also, I implement virtual scrolling from rx-angular library. For data source, I use UnsplashAPI to fetch images which are essential for demonstrating new Angular tool NgOptimizer, as well as loading a lot of data since app is fetching very large images.",
-    "status": "finished",
+    "status": "Finished",
     "liveUrl": "https://pathfinder-travel-blog.web.app"
+  },
+  {
+    "id": 7,
+    "name": "**classified**",
+    "technologies": "Angular, React, Node, GraphQL, Jira, Git",
+    "description": "Cloud-based insights and management service, combining management and updating tools with insights into how devices are being used.",
+    "coverImagePath": "",
+    "myWork": "In my role on the project, I specialize in manipulating and creating GraphQL queries, ensuring seamless communication between the frontend and backend. I am proficient in creating various Angular forms, implementing form validation, and enhancing the user experience. Bug fixing is a crucial aspect of my responsibilities, where I promptly identify and resolve issues to maintain application stability. I play a key role in maintaining applications for managing device firmware, overseeing the firmware lifecycle, ensuring compatibility, and addressing any issues that arise. Additionally, I contribute to React tasks, adding new features, and maintaining existing ones. My focus is on delivering high-quality solutions and collaborating with the team to achieve project objectives. Overall, my work involves a range of tasks, from GraphQL and Angular to bug fixing, firmware management, and React development.",
+    "status": "In Progress",
+    "liveUrl": ""
   }
 ]
