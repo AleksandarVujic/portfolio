@@ -18,7 +18,7 @@ export class LoaderLogoComponent implements OnInit {
     setTimeout(() => {
       this.showSplash = !this.showSplash;
       this.router.navigate(['/home']);
-    }, 3500);
+    }, 2000);
   }
 
 }
